@@ -188,11 +188,11 @@ module.exports = function (webpackEnv) {
             output: {
               comments: false,
             },
+            cache: true,
+            parallel: true,
+            sourceMap: true,
+            keep_fnames: true,
           },
-          cache: true,
-          parallel: true,
-          sourceMap: true,
-          keep_fnames: true,
         }),
         // new TerserPlugin({
         //   terserOptions: {
