@@ -2,7 +2,7 @@
   "name": "caer",
   "version": "0.1.0",
   "private": true,
-   "homepage": ".",
+  "homepage": ".",
   "basename": "/",
   "dependencies": {
     "@babel/core": "7.4.3",
