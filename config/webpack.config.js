@@ -10,7 +10,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CaseSensitivePathsPlugin = require("case-sensitive-paths-webpack-plugin");
 const InlineChunkHtmlPlugin = require("react-dev-utils/InlineChunkHtmlPlugin");
 // const TerserPlugin = require("terser-webpack-plugin");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+// const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const safePostCssParser = require("postcss-safe-parser");
@@ -181,18 +181,18 @@ module.exports = function (webpackEnv) {
       minimize: isEnvProduction,
       minimizer: [
         // This is only used in production mode
-        new UglifyJsPlugin({
-          uglifyOptions: {
-            ecma: 7,
-            ie8: false,
-            output: {
-              comments: false,
-            },
-          },
-          cache: true,
-          parallel: true,
-          sourceMap: true,
-        }),
+        // new UglifyJsPlugin({
+        //   uglifyOptions: {
+        //     ecma: 7,
+        //     ie8: false,
+        //     output: {
+        //       comments: false,
+        //     },
+        //   },
+        //   cache: true,
+        //   parallel: true,
+        //   sourceMap: true,
+        // }),
         // new TerserPlugin({
         // terserOptions: {
         //   keep_fnames: true,
