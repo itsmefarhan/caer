@@ -183,14 +183,6 @@ module.exports = function (webpackEnv) {
         // This is only used in production mode
         new UglifyJsPlugin({
           uglifyOptions: {
-            ecma: 7,
-            ie8: false,
-            output: {
-              comments: false,
-            },
-            cache: true,
-            parallel: true,
-            sourceMap: true,
             keep_fnames: true,
           },
         }),
